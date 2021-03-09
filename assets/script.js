@@ -42,44 +42,67 @@ var five = moment().hour(17).format('h a');
 $("#five").text(five);
 
 //background color changes based on past, present, or future.
-if (moment().hour(09).isSameOrBefore(lcTime)){
+if (moment().hour(09).isBefore(lcTime)){
     $('#tc9').css('background','cornflowerblue');
+
+    }else if (moment().hour(09).isSame(lcTime.hour(9))){
+        $('#tc9').css('background','yellow');
     };
 
-if (moment().hour(10).isSameOrBefore(lcTime)){
+if (moment().hour(10).isBefore(lcTime)){
      $('#tc10').css('background','cornflowerblue');
+
+    } else if (moment().hour(10).isSame(lcTime,'hour')){
+        $('#tc10').css('background','yellow');
     };
 
- if (moment().hour(11).isSameOrBefore(lcTime)){
+ if (moment().hour(11).isBefore(lcTime)){
     $('#tc11').css('background','cornflowerblue');
+
+    } else if (moment().hour(11).isSame(lcTime,'hour')){
+        $('#tc11').css('background','yellow');
     };
 
-if (moment().hour(12).isSameOrBefore(lcTime)){
+if (moment().hour(12).isBefore(lcTime)){
     $('#tc12').css('background','cornflowerblue');
+
+    } else if (moment().hour(12).isSame(lcTime,'hour')){
+    $('#tc12').css('background','yellow');
     };
-           
+      
 
-if (moment().hour(13).isSameOrBefore(lcTime)){
+if (moment().hour(13).isBefore(lcTime)){
     $('#tc13').css('background','cornflowerblue');
-     };
+     } else if (moment().hour(13).isSame(lcTime,'hour')){
+     $('#tc10').css('background','yellow');
+    };
   
-if (moment().hour(14).isSameOrBefore(lcTime)){
+if (moment().hour(14).isBefore(lcTime)){
        $('#tc14').css('background','cornflowerblue');
-     };
 
-
-if (moment().hour(15).isSameOrBefore(lcTime)){
-    $('#tc15').css('background','cornflowerblue');
-     };
-                   
-if (moment().hour(16).isSameOrBefore(lcTime)){
-     $('#tc16').css('background','cornflowerblue');
- 
+    } else if (moment().hour(14).isSame(lcTime,'hour')){
+        $('#tc10').css('background','yellow');
 };
 
- if (moment().hour(17).isSameOrBefore(lcTime)){
+if (moment().hour(15).isBefore(lcTime)){
+    $('#tc15').css('background','cornflowerblue');
+
+    } else if (moment().hour(15).isSame(lcTime,'hour')){
+    $('#tc10').css('background','yellow');
+};
+                   
+if (moment().hour(16).isBefore(lcTime)){
+     $('#tc16').css('background','cornflowerblue');
+ 
+    } else if (moment().hour(16).isSame(lcTime,'hour')){
+     $('#tc10').css('background','yellow');
+};
+
+if (moment().hour(17).isBefore(lcTime)){
      $('#tc17').css('background','cornflowerblue');
-     };
+     } else if (moment().hour(17).isSame(lcTime,'hour')){
+        $('#tc10').css('background','yellow');
+   };
 
  });
 //the input gets turned into a var when button is pushed and added to local storage.
