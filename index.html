@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+-
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="container">
+        <div class="row">
+          <div class="sm" id="nine">
+            9AM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc9'type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo9()'class="btn btn-outline-secondary" type="button" id="button-addon2">Save<i class="bi bi-bookmark-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="ten">
+            10AM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc10'type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo10()'class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="eleven">
+            11AM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc11'type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo11()' class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="noon">
+            12PM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc12'type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo12()' class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="one">
+            1PM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc13'type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo13()' class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="two">
+            2PM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc14'type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo14()' class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="three">
+            3PM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc15'type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo15()'class="btn btn-outline-secondary" type="submit" class="btnIn">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="four">
+            4PM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc16'type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo16()' class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sm" id="five">
+            5PM
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input id='tc17'type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button onclick='saveInfo17()' class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+          </div>
+        </div>
+
+
+
+    </div>
+  </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+  <script src="./assets/script.js"></script>
+</html>
