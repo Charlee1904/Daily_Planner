@@ -45,7 +45,7 @@ $("#five").text(five);
 if (moment().hour(09).isBefore(lcTime)){
     $('#tc9').css('background','cornflowerblue');
 
-    }else if (moment().hour(09).isSame(lcTime.hour(9))){
+    }else if (moment().hour(09).isSame(lcTime,'hour')){
         $('#tc9').css('background','yellow');
     };
 
