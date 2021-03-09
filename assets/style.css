@@ -35,6 +35,7 @@ textarea{
   width: 135px;
   height: 75px;
   margin-top: 32px;
+  border-bottom:3px solid green;
 }
 
 .row {

@@ -44,6 +44,7 @@ $("#five").text(five);
 //background color changes based on past, present, or future.
 if (moment().hour(09).isSameOrBefore(lcTime)){
     $('#tc9').css('background','cornflowerblue');
+    };
 
 if (moment().hour(10).isSameOrBefore(lcTime)){
      $('#tc10').css('background','cornflowerblue');
@@ -138,50 +139,3 @@ $('#tc14').val(ls14);
 $('#tc15').val(ls15);
 $('#tc16').val(ls16);
 $('#tc17').val(ls17);
-
-
-
-// if the time is before local time is after blocktime turn background grey
-//if its current time turn light blue 
-//iff its in the future turn green.
-
-
-
-
-// var lcTime = moment().get('hour');
-// if(lcTime.isBefore(blockTime)){
-//     $('tc9').css('background','red');
-// }
-
-//     $(function () {
-
-//         $("#submit").click(function () {
-//             var name = $("#name").val();
-//             alert(name);cd
-//             localStorage.setItem('username',name);
-//         });
-//     });
-// }); 
-// var lcTime = moment().format('h a');
-// if the time is < than current time - box turns grey
-//if the time is === to current time - box turns red
-//if the time is > than current time - box turns green
-
-
-// WHEN I view the timeblocks for that day
-// THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-
-
-// WHEN I click into a timeblock
-// THEN I can enter an event
-// WHEN I click the save button for that timeblock
-
-
-
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist
-
-
-
- 
