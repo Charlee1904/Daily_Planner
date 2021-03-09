@@ -42,12 +42,8 @@ var five = moment().hour(17).format('h a');
 $("#five").text(five);
 
 //background color changes based on past, present, or future.
-if (moment().hour(23).isBefore(lcTime)){
+if (moment().hour(09).isSameOrBefore(lcTime)){
     $('#tc9').css('background','cornflowerblue');
-
-    } else if (moment().hour(23).isSame(lcTime)){
-        $('#tc9').css('background','blue')
-    };
 
 if (moment().hour(10).isSameOrBefore(lcTime)){
      $('#tc10').css('background','cornflowerblue');
